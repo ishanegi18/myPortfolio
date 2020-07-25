@@ -1,0 +1,723 @@
+<!DOCTYPE html>
+ <html lang="en">
+    <head>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="utf-8">
+        <title>Isha Negi| Front-End Developer</title>
+         <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href='https://fonts.googleapis.com/css?family=Raleway:200,300,400,700,900,800' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Roboto:200,300,400,900,700,500,300' rel='stylesheet' type='text/css'>
+        <link rel = "stylesheet" href = "http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/owl.carousel.css">
+        <link rel="stylesheet" href="css/main.css">
+
+
+    </head>
+    <style>
+
+
+
+      ///*modal*///
+      #carouselHeader {
+          h3{
+            position: relative;
+            text-align: center;
+          }
+      }
+      /* Indicators list style */
+      .project-slide .carousel-indicators {
+        bottom: 0;
+        left: 0;
+        margin-left: 5px;
+        width: 100%;
+      }
+      /* Indicators list style */
+      .project-slide .carousel-indicators li {
+        border: medium none;
+        border-radius: 0;
+        float: middle;
+        height: 35px;
+        margin-bottom: -10px;
+        margin-left: 0;
+        margin-right: 5px !important;
+        margin-top: 0;
+        width: 50px;
+        border-radius: 3px;
+
+      }
+      /* Indicators images style */
+      .project-slide .carousel-indicators img {
+        border: 2px solid $dark-orange;
+        border-radius: 3px;
+        float: left;
+        height: 35px;
+        left: 0;
+        width: 50px;
+        opacity: 0.7;
+      }
+      /* Indicators active image style */
+      .project-slide .carousel-indicators .active img {
+        border: 2px solid $orange;
+        opacity: 1;
+      }
+      /* carousel-control */
+      .carousel-control{
+        color: $dark-orange;
+        opacity: 0.5;
+      }
+      .carousel-control:hover,
+      .carousel-control:focus {
+        color: $orange;
+        opacity: 1;
+      }
+      .carousel-control.left, .carousel-control.right{
+          background: none !important;
+          filter: none !important;
+          progid: none !important;
+      }
+
+      @media screen and (max-width: 480px) {
+        .proecess-block .process-inner {
+            height: 60vh;
+        }
+        #girl{
+          display: none;
+        }
+        .up{
+          font-size: 30px;
+          line-height: 40px;
+        }
+        .down{
+          font-size: 20px;
+          line-height: 30px;
+
+        }
+        .experience {
+            background: transparent url("../img/work3.jpg") no-repeat scroll center center / cover;
+
+
+        }
+        .home-banner {
+
+
+          background-position: center center;
+          background-repeat: no-repeat;
+          background-size: cover;
+          scrollLeft:0;
+          width: 100%;
+          background-image: url('../img/banner.jpg');
+
+          background-attachment: fixed;
+        }
+
+
+      }
+
+    </style>
+    <body>
+
+      <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.16.0/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+         https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/7.16.0/firebase-analytics.js"></script>
+
+    <script>
+      // Your web app's Firebase configuration
+      var firebaseConfig = {
+        apiKey: "AIzaSyAFIGaavKPptFqfP8llWq7EDSKzqFDY3OI",
+        authDomain: "portfolio-c4217.firebaseapp.com",
+        databaseURL: "https://portfolio-c4217.firebaseio.com",
+        projectId: "portfolio-c4217",
+        storageBucket: "portfolio-c4217.appspot.com",
+        messagingSenderId: "602473375245",
+        appId: "1:602473375245:web:a4c0c7b463f8f8d9d7d744",
+        measurementId: "G-SC39NCR8LT"
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+      firebase.analytics();
+    </script>
+
+
+        <!-- #preloader -->
+        <div id="preloader">
+            <div class="preloader loading">
+                <span class="slice"></span>
+                <span class="slice"></span>
+                <span class="slice"></span>
+                <span class="slice"></span>
+                <span class="slice"></span>
+                <span class="slice"></span>
+            </div>
+        </div>
+        <!-- end #preloader -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript">var scrolltotop={setting:{startline:100,scrollto:0,scrollduration:1e3,fadeduration:[500,100]},controlHTML:'<img src="https://i1155.photobucket.com/albums/p559/scrolltotop/arrow86.png" />',controlattrs:{offsetx:5,offsety:5},anchorkeyword:"#top",state:{isvisible:!1,shouldvisible:!1},scrollup:function(){this.cssfixedsupport||this.$control.css({opacity:0});var t=isNaN(this.setting.scrollto)?this.setting.scrollto:parseInt(this.setting.scrollto);t="string"==typeof t&&1==jQuery("#"+t).length?jQuery("#"+t).offset().top:0,this.$body.animate({scrollTop:t},this.setting.scrollduration)},keepfixed:function(){var t=jQuery(window),o=t.scrollLeft()+t.width()-this.$control.width()-this.controlattrs.offsetx,s=t.scrollTop()+t.height()-this.$control.height()-this.controlattrs.offsety;this.$control.css({left:o+"px",top:s+"px"})},togglecontrol:function(){var t=jQuery(window).scrollTop();this.cssfixedsupport||this.keepfixed(),this.state.shouldvisible=t>=this.setting.startline?!0:!1,this.state.shouldvisible&&!this.state.isvisible?(this.$control.stop().animate({opacity:1},this.setting.fadeduration[0]),this.state.isvisible=!0):0==this.state.shouldvisible&&this.state.isvisible&&(this.$control.stop().animate({opacity:0},this.setting.fadeduration[1]),this.state.isvisible=!1)},init:function(){jQuery(document).ready(function(t){var o=scrolltotop,s=document.all;o.cssfixedsupport=!s||s&&"CSS1Compat"==document.compatMode&&window.XMLHttpRequest,o.$body=t(window.opera?"CSS1Compat"==document.compatMode?"html":"body":"html,body"),o.$control=t('<div id="topcontrol">'+o.controlHTML+"</div>").css({position:o.cssfixedsupport?"fixed":"absolute",bottom:o.controlattrs.offsety,right:o.controlattrs.offsetx,opacity:0,cursor:"pointer"}).attr({title:"Scroll to Top"}).click(function(){return o.scrollup(),!1}).appendTo("body"),document.all&&!window.XMLHttpRequest&&""!=o.$control.text()&&o.$control.css({width:o.$control.width()}),o.togglecontrol(),t('a[href="'+o.anchorkeyword+'"]').click(function(){return o.scrollup(),!1}),t(window).bind("scroll resize",function(t){o.togglecontrol()})})}};scrolltotop.init();</script>
+<noscript>Not seeing a <a href="https://www.scrolltotop.com/">Scroll to Top Button</a>? Go to our FAQ page for more info.</noscript>
+
+        <header class="site-header navbar-fixed-top navbar-default">
+            <div class="container">
+
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">
+                        <h3 style="color:white; margin-top:10px; letter-spacing:4px;">D<span style="font-size:25px;">≡</span>SIGN<span style="font-size:25px;">≡</span>R</h3>
+                    </a>
+                </div>
+
+                <div class="nav-toggle hidden-xs">
+                    <button class="toggle-btn">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+
+                <nav class="collapse navbar-collapse navbar-right">
+                    <ul class="nav navbar-nav main-manu">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#works">Project</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#process">Service</a></li>
+
+
+
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <div class="home-banner fullscreen" >
+            <div class="gradient"></div>
+            <div class="banner-content dtable fullscreen">
+                <div class="content-inner dtablecell">
+                    <div class="container">
+                        <h1>Isha Negi</h1>
+                        <div class="typewriter">
+                        <p>Front End Developer</p>
+                      </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- works -->
+        <div id="works" class="works section">
+
+          <div class="container">
+            <div class="title">
+
+                <p style="font-size:32px;">A glimpse of my work.</p>
+            </div>
+            <div class="row">
+              <!---FIRST--->
+          <div class="col-md-4" data-aos="zoom-in" data-aos-offset="50" data-aos-delay="50"
+data-aos-duration="1000"
+data-aos="zoom-in" data-aos-offset="50" data-aos-delay="50"
+          data-aos-duration="1000"
+          data-aos-easing="ease-in-out">
+            <div class="panel panel-default fixed-width center-block" data-toggle="modal" data-target="#projectA" >
+              <div class="panel-body" style="height:;">
+                <a href="#">
+                  <img class="img-responsive center-block" src="img/project/a.jpg"/>
+                </a>
+              </div>
+              <div class="panel-footer">
+
+                  <p>Basic Portfolio
+                   <button type="button"  class="btn btn-dark" style="float:right;background-color:black;color:white;width:80px;height:40px;">View</button></p>
+
+              </div>
+            </div>
+          </div>
+          <div class="modal fade" id="projectA">
+            <div class=" modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <p style="float:left;">Tool used : AdobeXD </p>
+                    <button type="button" class="close" data-dismiss="modal" title="Close"> <i class="fa fa-close" style="font-size:24px"></i></button>
+                    <br>
+                  </div>
+                <div class="modal-body">
+                  <div id="projectCsel" class="carousel slide project-slide" data-interval="false">
+                    <div class="carousel-inner">
+                      <div class="item active"> <img src="img/project/a.jpg" alt="item1">
+                      </div>
+                      <div class="item"><img src="img/project/a1.jpg" alt="item2">
+                      </div>
+                      <div class="item"> <img src="img/project/a2.jpg" alt="item3">
+                      </div>
+                      <div class="item"> <img src="img/project/a3.png" alt="item4">
+                      </div>
+
+                    </div>
+                    <a class="left carousel-control" href="#projectCsel" role="button" data-slide="prev"> <span class="glyphicon glyphicon-chevron-left"></span></a>
+                    <a class="right carousel-control" href="#projectCsel" role="button" data-slide="next"> <span class="glyphicon glyphicon-chevron-right"></span></a>
+                  </div>
+
+
+                </div>
+                <div class="modal-footer">
+
+                    </div>
+              </div>
+            </div>
+          </div>
+          <!---SECOND---->
+          <div class="col-md-4" data-aos="zoom-in" data-aos-offset="50" data-aos-delay="50"
+data-aos-duration="1000"
+data-aos="zoom-in" data-aos-offset="50" data-aos-delay="100"
+          data-aos-duration="1000"
+          data-aos-easing="ease-in-out">
+            <div class="panel panel-default fixed-width center-block" data-toggle="modal" data-target="#projectB">
+              <div class="panel-body" style="height:;">
+                <a href="#">
+                  <img class="img-responsive center-block" src="img/project/b.jpg" />
+                </a>
+              </div>
+              <div class="panel-footer">
+
+                  <p>Help Desk | Fandom Realm
+                    <button type="button"  class="btn btn-dark" style="float:right;background-color:black;color:white;width:80px;height:40px;">View</button></p>
+
+
+              </div>
+            </div>
+          </div>
+          <div class="modal fade" id="projectB">
+            <div class=" modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <p style="float:left;">Live Website</p>
+                    <button type="button" class="close" data-dismiss="modal" title="Close"> <i class="fa fa-close" style="font-size:24px"></i></button>
+                    <br>
+                  </div>
+                <div class="modal-body">
+                  <div id="projectCsel1" class="carousel slide project-slide" data-interval="false">
+                    <div class="carousel-inner">
+                      <div class="item active"> <img src="img/project/b.jpg" alt="item5">
+                      </div>
+                      <div class="item"><img src="img/project/b1.jpg" alt="item6">
+                      </div>
+                      <div class="item"> <img src="img/project/b2.jpg" alt="item7">
+                      </div>
+                      <div class="item"> <img src="img/project/b3.jpg" alt="item8">
+                      </div>
+
+                    </div>
+                    <a class="left carousel-control" href="#projectCsel1" role="button" data-slide="prev"> <span class="glyphicon glyphicon-chevron-left"></span></a>
+                    <a class="right carousel-control" href="#projectCsel1" role="button" data-slide="next"> <span class="glyphicon glyphicon-chevron-right"></span></a>
+                  </div>
+                  <div id="info">
+
+
+                </div>
+                <div class="modal-footer">
+                  <button type="button" onClick="location.href='http://help.fandomrealm.in/'" class="btn btn-dark" style="float:right;background-color:black;color:white;width:80px;height:40px;">Visit</button>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+          <!---THIRD--->
+          <div class="col-md-4" data-aos="zoom-in" data-aos-offset="50" data-aos-delay="50"
+data-aos-duration="1000"
+data-aos="zoom-in" data-aos-offset="50" data-aos-delay="150"
+          data-aos-duration="1000"
+          data-aos-easing="ease-in-out">
+            <div class="panel panel-default fixed-width center-block" data-toggle="modal" data-target="#projectc">
+              <div class="panel-body" style="height:;">
+                <a href="#">
+                  <img class="img-responsive center-block" src="img/project/c.jpg" />
+                </a>
+              </div>
+              <div class="panel-footer">
+
+                  <p>Vastu Fengshui
+                    <button type="button"  class="btn btn-dark" style="float:right;background-color:black;color:white;width:80px;height:40px;">View</button></p>
+
+
+              </div>
+            </div>
+          </div>
+          <div class="modal fade" id="projectc">
+            <div class=" modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <p style="float:left;">Live Website</p>
+                    <button type="button" class="close" data-dismiss="modal" title="Close"> <i class="fa fa-close" style="font-size:24px"></i></button>
+                    <br>
+                  </div>
+
+                <div class="modal-body">
+                  <div id="projectCsel2" class="carousel slide project-slide" data-interval="false">
+                    <div class="carousel-inner">
+                      <div class="item active"> <img src="img/project/c.jpg" alt="item9">
+                      </div>
+                      <div class="item"><img src="img/project/c1.jpg" alt="item10">
+                      </div>
+                      <div class="item"> <img src="img/project/c2.jpg" alt="item11">
+                      </div>
+
+
+                    </div>
+                    <a class="left carousel-control" href="#projectCsel2" role="button" data-slide="prev"> <span class="glyphicon glyphicon-chevron-left"></span></a>
+                    <a class="right carousel-control" href="#projectCsel2" role="button" data-slide="next"> <span class="glyphicon glyphicon-chevron-right"></span></a>
+                  </div>
+                  <div id="info">
+
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" onClick="location.href='https://vastufengshui.in/'" class="btn btn-dark" style="float:right;background-color:black;color:white;width:80px;height:40px;">Visit</button>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+        <!---FOURTH--->
+        <div class="row">
+        <div class="col-md-4" data-aos="zoom-in" data-aos-offset="50" data-aos-delay="50"
+data-aos-duration="1000"
+data-aos="zoom-in" data-aos-offset="50" data-aos-delay="200"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-out">
+          <div class="panel panel-default fixed-width center-block" data-toggle="modal" data-target="#projectD">
+            <div class="panel-body" style="height:;">
+              <a href="#">
+                <img class="img-responsive center-block" src="img/project/d.jpg"/>
+              </a>
+            </div>
+            <div class="panel-footer">
+
+                <p>Analytical Dashboard
+                  <button type="button"  class="btn btn-dark" style="float:right;background-color:black;color:white;width:80px;height:40px;">View</button></p>
+
+
+            </div>
+          </div>
+        </div>
+        <div class="modal fade" id="projectD" tabindex="-1" role="dialog">
+          <div class=" modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <p style="float:left;">Dashboard</p>
+                  <button type="button" class="close" data-dismiss="modal" title="Close"> <i class="fa fa-close" style="font-size:24px"></i></button>
+                  <br>
+                </div>
+              <div class="modal-body">
+                <div id="projectCsel3" class="carousel slide project-slide" data-interval="false">
+                  <div class="carousel-inner">
+                    <div class="item active"> <img src="img/project/d.jpg" alt="item12">
+                    </div>
+                    <div class="item"> <img src="img/project/d4.jpg" alt="item16">
+                    </div>
+                    <div class="item"><img src="img/project/d1.jpg" alt="item13">
+                    </div>
+                    <div class="item"> <img src="img/project/d2.jpg" alt="item14">
+                    </div>
+                    <div class="item"> <img src="img/project/d3.jpg" alt="item15">
+                    </div>
+
+
+
+                  </div>
+                  <a class="left carousel-control" href="#projectCsel3" role="button" data-slide="prev"> <span class="glyphicon glyphicon-chevron-left"></span></a>
+                  <a class="right carousel-control" href="#projectCsel3" role="button" data-slide="next"> <span class="glyphicon glyphicon-chevron-right"></span></a>
+                </div>
+
+
+              </div>
+              <div class="modal-footer">
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--FIFTH--->
+      <div class="col-md-4" data-aos="zoom-in" data-aos-offset="50" data-aos-delay="50"
+data-aos-duration="1000"
+data-aos="zoom-in" data-aos-offset="50" data-aos-delay="250"
+      data-aos-duration="1000"
+      data-aos-easing="ease-in-out">
+        <div class="panel panel-default fixed-width center-block" data-toggle="modal" data-target="#projectE">
+          <div class="panel-body" style="height:;">
+            <a href="#">
+              <img class="img-responsive center-block" src="img/project/e.jpg"/>
+            </a>
+          </div>
+          <div class="panel-footer">
+
+              <p>Landing Pages
+               <button type="button"  class="btn btn-dark" style="float:right;background-color:black;color:white;width:80px;height:40px;">View</button></p>
+
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="projectE">
+        <div class=" modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <p style="float:left;">Tool used : AdobeXD </p>
+                <button type="button" class="close" data-dismiss="modal" title="Close"> <i class="fa fa-close" style="font-size:24px"></i></button>
+                <br>
+              </div>
+
+            <div class="modal-body">
+              <div id="projectCsel4" class="carousel slide project-slide" data-interval="false">
+                <div class="carousel-inner">
+                  <div class="item active"> <img src="img/project/e.jpg" alt="item17">
+                  </div>
+                  <div class="item"><img src="img/project/e1.jpg" alt="item18">
+                  </div>
+                  <div class="item"><img src="img/project/e2.jpg" alt="item19">
+                  </div>
+                  <div class="item"><img src="img/project/e3.jpg" alt="item19">
+                  </div>
+
+
+
+                </div>
+                <a class="left carousel-control" href="#projectCsel4" role="button" data-slide="prev"> <span class="glyphicon glyphicon-chevron-left"></span></a>
+                <a class="right carousel-control" href="#projectCsel4" role="button" data-slide="next"> <span class="glyphicon glyphicon-chevron-right"></span></a>
+              </div>
+
+
+            </div>
+            <div class="modal-footer">
+
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+</div>
+    </div>
+    </div>
+
+        <!-- // works -->
+        <!-- about-->
+
+        <div id="about" class="about">
+            <div class="container">
+              <div class="title">
+
+                  <p style="font-size:32px;">A little about me.</p>
+              </div>
+
+                <div class="row">
+
+
+                    <div class="col-xs-12 col-md-8 " >
+
+
+                      <div class="about-intro" data-aos="zoom-in-right" data-aos-offset="50" data-aos-delay="50"
+                      data-aos-duration="1000"
+                      data-aos-offset="50" data-aos-delay="50"
+                      data-aos-duration="1000"
+                      data-aos-easing="linear">
+                        <p class="up" >Hi There,<br>
+                        I'm Isha Negi</p>
+                        <br>
+                        <p class="down" >I'm a 20 year old freelancing Front-end developer. I create beautiful and <b><i>elegant </i></b>websites using best practice accessibility. I enjoy turning complex problems into simple, beautiful and intuitive interface designs.</p>
+                            </div>
+                    </div>
+                    <div class="col-xs-12  col-md-4 " id="girl" data-aos="fade-left" data-aos-offset="50" data-aos-delay="50"
+                    data-aos-duration="1000"
+                    data-aos-easing="linear">
+                      <img src="img/girl.png" height="600px;">
+                    </img>
+
+
+
+                </div>
+              </div>
+
+        </div>
+      </div>
+
+        <!-- // about -->
+
+
+
+        <!-- process -->
+        <div id="process" class="process section">
+            <div class="container">
+                <div class="row">
+                  <div class="title">
+                      <p style="font-size:30px;">Things I know...</p>
+                  </div>
+
+                    <div class="proecess-block col-xs-12 col-sm-6 col-md-4" data-aos="fade-up" data-aos-offset="50" data-aos-delay="50"
+                    data-aos-duration="1000"
+
+                    data-aos-easing="linear">
+                        <div class="process-inner">
+                            <div class="icon-holder">
+                                <img src="img/drawing.png"></img>
+
+                            </div><br><br>
+                            <h3 class="heading">Design </h3>
+
+                            <p class="description">I prefer using these services which avails me to built an elegant and visually appealing websites.<br>
+                            <br><img src="img/html.png"></img>&nbsp;<img src="img/css.png"></img>
+                            &nbsp;<img src="img/js.png"></img>&nbsp;<img src="img/bs.jpg" style="height:30px;width:30px;"></img>
+                            &nbsp;<img src="img/sass.png"></img>
+                          </p>
+
+                        </div>
+                    </div>
+
+                    <div class="proecess-block col-xs-12 col-sm-6 col-md-4 " data-aos="fade-up" data-aos-offset="50" data-aos-delay="50"
+                    data-aos-duration="1000"
+                    data-aos-easing="linear">
+                        <div class="process-inner">
+                            <div class="icon-holder">
+                                <img src="img/layers.png"></img>
+                            </div><br><br>
+                            <h3 class="heading">Database </h3>
+                            <p class="description">Working with SQL commands and queries has always been intresting to me.<br><br>
+                              &nbsp;<img src="img/sql.png" style="height:50px;width:50px;"></img>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="proecess-block col-xs-12 col-sm-6 col-md-4 " data-aos="fade-up" data-aos-offset="50" data-aos-delay="50"
+                    data-aos-duration="1000"
+                    data-aos-easing="linear">
+                        <div class="process-inner">
+                            <div class="icon-holder">
+                                <img src="img/add.png"></img>
+                            </div><br><br>
+                            <h3 class="heading">Additional </h3>
+
+                            <p class="description">Being a keen leaner,I always try my best to expand as well as enhance my knowledge by learning & exploring new tools.<br><br>
+                              &nbsp;<img src="img/php.png" style="height:40px;width:40px;"></img>&nbsp;<img src="img/wordpress.png"></img>
+                              &nbsp;<img src="img/adobe.png" style="height:40px;width:40px;"></img>
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- // process -->
+
+        <!-- experience -->
+        <div id="experience" class="experience section">
+            <div class="gradient"></div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 col-md-1">
+
+                    </div>
+
+
+                    <div class="col-xs-12 col-md-10">
+                        <div class="exp-block">
+                              <p style="text-align:center;font-size:30px ;letter-spacing:4px;font-family: 'Raleway', sans-serif;">CONNECT</p>
+                              <br>
+                              <center>
+                              <button  class="social" type="button" title="Behance"title="Dribble" ><a  href="https://dribbble.com/Isha_negI"><i class="fa fa-dribbble fa-lg" style="color:white;"></i></a></button>
+                              <button  class="social" type="button" title="Behance"><a  href="https://www.behance.net/ishanegi"><i class="fa fa-behance fa-lg" style="color:white;"></i></a></button>
+                              <button  class="social" type="button" title="GitHub"><a  href="https://github.com/ishanegi18"><i class="fa fa-github fa-lg" style="color:white;"></i></a></button>
+                              <button  class="social" type="button" title="Linkedin"><a  href="https://www.linkedin.com/in/isha-negi-a38b461a9/"><i class="fa fa-linkedin fa-lg" style="color:white;"></i></a></button>
+                            </center>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-1">
+
+                    </div>
+
+
+
+                </div>
+
+
+            </div>
+        </div>
+        <!-- // experience -->
+
+
+
+
+
+
+        <footer class="footer">
+            <div class="conainer text-center wow zoomIn">
+
+
+                <div class="copyright">
+
+                    <p >Isha Negi || Copyright:2020 All Rights Reserved.</p>
+                </div>
+            </div>
+        </footer>
+
+
+        <!--
+        JavaScripts
+        ========================== -->
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+        AOS.init();
+        </script>
+
+        <script>
+          $(".carousel").swipe({
+
+          swipe: function(event, direction, distance, duration, fingerCount, fingerData) {
+
+            if (direction == 'left') $(this).carousel('next');
+            if (direction == 'right') $(this).carousel('prev');
+
+          },
+          allowPageScroll:"vertical"
+
+        });
+          </script>
+        <script src="js/vendor/jquery-1.11.1.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/owl.carousel.js"></script>
+        <script src="js/wow.min.js"></script>
+        <script src="js/jquery.justifiedGallery.min.js"></script>
+        <script src="js/owl.carousel.min.js"></script>
+        <script src="js/main.js"></script>
+
+        <!--firebase-->
+        <!-- The core Firebase JS SDK is always required and must be listed first -->
+      <script src="/__/firebase/7.16.0/firebase-app.js"></script>
+
+      <!-- TODO: Add SDKs for Firebase products that you want to use
+           https://firebase.google.com/docs/web/setup#available-libraries -->
+      <script src="/__/firebase/7.16.0/firebase-analytics.js"></script>
+
+      <!-- Initialize Firebase -->
+      <script src="/__/firebase/init.js"></script>
+
+
+    </body>
+</html>
